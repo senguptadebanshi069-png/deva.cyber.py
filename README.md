@@ -16,8 +16,8 @@ flowchart TD
     E[Wait for User Modification]
     F[Recalculate Current SHA-256 Hash]
     G{Compare Hashes}
-    H[Integrity Verified ✅<br/>Green Signal]
-    I[Security Alert 🚨<br/>File Modified]
+    H[Integrity Verified <br/>Green Signal]
+    I[Security Alert <br/>File Modified]
     J[Display Error<br/>File Not Found]
 
     A --> B
