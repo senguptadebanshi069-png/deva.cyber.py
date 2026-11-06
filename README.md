@@ -2,7 +2,9 @@
 Repository dedicated to Cybersecurity research, Digital Forensics, and Ethical Hacking tools. Features practical scripts including cryptographic file integrity checkers, secure automation workflows, and defensive logic implementations built with Python.
 
 
+
 File Integrity Checker Architecture
+```mermaid
 Overview
 This Python-based File Integrity Checker monitors a target file for unauthorized modifications by using SHA-256 cryptographic hashing. The application generates an initial baseline hash, waits for potential file changes, recalculates the file hash, and compares both values to verify integrity.
 
@@ -16,8 +18,8 @@ flowchart TD
     E[Wait for User Modification]
     F[Recalculate Current SHA-256 Hash]
     G{Compare Hashes}
-    H[Integrity Verified <br/>Green Signal]
-    I[Security Alert <br/>File Modified]
+    H[Integrity Verified ✅<br/>Green Signal]
+    I[Security Alert 🚨<br/>File Modified]
     J[Display Error<br/>File Not Found]
 
     A --> B
@@ -69,4 +71,5 @@ The system waits for potential file modifications.
 A new SHA-256 hash is calculated.
 Both hashes are compared.
 Matching hashes produce an integrity success notification.
-Mismatched hashes generate a security alert.
+Mismatched hashes generate a security alert. ```
+
